@@ -39,19 +39,18 @@
     </nav>
 
     <section id="home" class="home container">
-        <div class="container">
-            <div class="row d-flex align-items-center ">
-                <div class="col-8">
-                    <h3 class="fw-semibold">Hi, I am </h3>
-                    <h1 class="fw-bold">Hilal Hamdi</h1>
-                    <p>I am software Enginer based in indonesia</p>
-                    <a class="btn button" href="images/potrait.png" download>Resume</a>
-                </div>
-                <div class="col-4">
-                    <img src="images/potrait.png" alt="Potrait">
-                </div>
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hi, I am </h3>
+                <h1 class="fw-bold">Hilal Hamdi</h1>
+                <p>I am software Enginer based in indonesia</p>
+                <a class="btn button" href="images/potrait.png" download>Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img src="images/potrait.png" alt="Potrait">
             </div>
         </div>
+
         <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
             <div class=" text-dark">More Info</div>
             <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
@@ -112,13 +111,13 @@
 
     <section id="work" class=" work container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad doloremque quo a dolores,
                     laboriosam, non explicabo sequi, harum minus earum cum accusantium odit est? Iste at eaque deserunt
                     molestiae possimus? Dolore sapiente non doloremque culpa eveniet laborum obcaecati vel maiores.
                     Possimus sed eum amet ullam quidem reiciendis alias ab!</p>
             </div>
-            <div class="col work-img">
+            <div class="col-12 col-6 work-img">
                 <div id="work-1" class="work-img-item">
                     <img src="images/work-1.png" alt="work-1">
                 </div>
@@ -135,7 +134,7 @@
 
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class=" col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, omnis enim commodi fugiat consequuntur
                     quis! Est sint et neque itaque! Vel hic praesentium ducimus modi eveniet repellendus animi assumenda
                     quia! Consequuntur odio inventore quaerat porro similique debitis rem? Dignissimos laudantium eos
@@ -155,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
                 <form class="contact-form" onsubmit="onFormSubmit(event)">
                     <div class=" mb-3">
                         <label for="inp-email" class="form-label">Email address</label>
