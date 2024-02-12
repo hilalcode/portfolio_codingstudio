@@ -25,13 +25,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
+                        <a class="nav-link" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,14 +52,14 @@
                 </div>
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More Info</a>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class=" text-dark">More Info</div>
             <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
-        </div>
+        </a>
     </section>
 
 
-    <section id="About" class="about container">
+    <section id="about" class="about container">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur explicabo, omnis facilis voluptatibus quasi
             minus amet, quia quo quae accusantium commodi molestias, sapiente asperiores maxime vero nostrum atque dicta
             expedita ut veritatis. Cum molestias eos magnam facere excepturi obcaecati quas in debitis laudantium
@@ -131,9 +131,54 @@
 
             </div>
         </div>
+    </section>
+
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class=" col">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, omnis enim commodi fugiat consequuntur
+                    quis! Est sint et neque itaque! Vel hic praesentium ducimus modi eveniet repellendus animi assumenda
+                    quia! Consequuntur odio inventore quaerat porro similique debitis rem? Dignissimos laudantium eos
+                    tenetur voluptas, doloribus cumque. Pariatur nostrum alias distinctio ea?</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/facebook.png" alt="Facebook Icon">
+                        <p class="mb-0 ms-2">Hilal Hamdi</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/ig.jpg" alt="Instagram Icon">
+                        <p class="mb-0 ms-2">@hilalbow_</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/twiter.png" alt="twiter icon">
+                        <p>hilal Bow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class=" mb-3">
+                        <label for="inp-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inp-email" placeholder="example@gmail.com">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp-subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="inp-subject" placeholder="You Subject">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inp-message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inp-message" placeholder="Your Message">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
 
 
-
+                </form>
+            </div>
+        </div>
     </section>
 
 

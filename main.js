@@ -12,5 +12,25 @@ function toggleDetail(e) {
     const detail = $(item).children(".about-exp-item-detail")
 
     $(detail).slideToggle()
+}
 
+function onFormSubmit(e) {
+    e.preventDefault()
+
+    const email = $("#inp-email")
+    const subject = $("#inp-subject")
+    const message = $("#inp-message")
+
+    if (!$(email).val()) {
+        alert("Email is requared")
+    } else if (!$(subject).val()) {
+        alert("Subject is requared")
+    } else if (!$(message).val()) {
+        alert("Message is requared")
+    } else {
+        alert("Form Submited")
+        $(email).val("")
+        $(subject).val("")
+        $(message).val("")
+    }
 }
